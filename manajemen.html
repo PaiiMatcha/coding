@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+    <link rel="icon" href="images/images.png" />
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header>
+        <h1>SMKN 17 JAKARTA</h1>
+        <nav>
+            <ul>
+                <li><a href="index2.html">Home</a></li>
+                <li><a href="manajemen.html">Manajemen</a></li>
+                <li><a href="kas.php">Kas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="data_entry.php" method="post">
+            <div class="form-group">
+              <label for="name">Nama Siswa:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="amount">Jumlah Uang (Rp):</label>
+              <input type="number" id="amount" name="amount" required />
+            </div>
+            <div class="form-group">
+              <label for="date">Tanggal:</label>
+              <input type="date" id="date" name="date" required />
+            </div>
+            <div class="form-group">
+              <label for="kasType">Tipe Kas:</label>
+              <select id="kasType" name="kasType">
+                <option value="d">Debet</option>
+                <option value="k">Kredit</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="description">Deskripsi:</label>
+              <textarea id="description" name="description"></textarea>
+            </div>
+    
+            <div class="form-group">
+              <input type="submit" name="submit" value="Kirim" />
+            </div>
+          </form>
+    </main>
+</body>
+</html>
